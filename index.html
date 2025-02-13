@@ -1,6 +1,13 @@
 <html>
     <body>
-       <h1>CHATBOT SALUDADOR</h1>
-       hola
+       <h1>CHATBOT SALUDADOR</h1> 
+       <form id="saludar-form">
+          <label for="nombre">Hola , Ingresa tu nombre:</label>
+          <input type="text" id="nombre" />
+          <input type="submit" value="saludar" id="saludar-button" />
+          </form>
+          <div id="resultado-div"></div>
+          <script type="module" src="./src/presenter.js"></script>
+
     </body>
 </html>
