@@ -1,7 +1,8 @@
 import saludar from "./saludador"; 
 
 const nombreInput = document.querySelector("#nombre");
-const generoSelect = document.querySelector("#genero")  
+const generoSelect = document.querySelector("#genero");
+const edadInput =document.querySelector("#edad");
 const form = document.querySelector("#saludar-form");
 const div = document.querySelector("#resultado-div");
 
@@ -11,7 +12,9 @@ form.addEventListener("submit", (event) => {
 
   const nombre = nombreInput.value.trim();
   const genero = generoSelect.value;
-  const saludo = saludar(nombre, genero);
+  const edad = parseInt(edadInput.value);
+
+  const saludo = saludar(nombre, genero,edad);
   
   div.innerHTML = `<p>${saludo}</p>`;
 });
