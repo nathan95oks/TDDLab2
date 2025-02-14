@@ -2,8 +2,14 @@
     <body>
        <h1>CHATBOT SALUDADOR</h1> 
        <form id="saludar-form">
-          <label for="nombre">Hola , Ingresa tu nombre:</label>
+          <label for="nombre">Hola , Ingresa tu nombre: </label>
           <input type="text" id="nombre" />
+          <label for="genero">Selecciona tu genero: </label>
+          <select id="genero">
+            <option value ="masculino">Masculino</option>
+            <option value ="femenino">Femenino</option>
+            <option value ="otro">Otro</option>
+          </select>
           <input type="submit" value="saludar" id="saludar-button" />
           </form>
           <div id="resultado-div"></div>
