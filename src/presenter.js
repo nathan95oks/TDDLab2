@@ -1,4 +1,4 @@
-import saludar from "./saludador"; 
+import saludar from "./saludador.js"; 
 
 const nombreInput = document.querySelector("#nombre");
 const generoSelect = document.querySelector("#genero");
@@ -20,6 +20,8 @@ form.addEventListener("submit", (event) => {
   
   div.innerHTML = `<p>${saludo}</p>`;
 });
+
+
 
 
 
