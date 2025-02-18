@@ -29,7 +29,7 @@ function saludar(nombre,genero,edad,idioma) {
     }
   }
   
-  else {
+  else if ((idioma ==='ingles')){
     if((genero==='masculino')&&(edad<30 && edad >0)){
         saludo='Young Man';
     }else if((genero ==='masculino')&&(edad >30)){
